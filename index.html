@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>My portfolio</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    poppins: ['Poppins',"sans-serif"]
+            }
+        }
+    }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn {
+                @apply px-2 py-2 rounded-md;
+            }
+        }
+    </style>
+</head>
+<body class="mx-40 font-poppins">
+    <nav class="flex flex-row justify-between my-8">
+        <div>
+            <h1 class="text-3xl font-bold   ">Ameen MJ</h1>
+        </div>
+
+        <div class="flex flex-row gap-7 font-semibold">
+            <a>About Me</a>
+            <a>Projects</a>
+            <a>Contact Info</a>
+        </div>
+    </nav>
+    <main class="flex flex-row items-center">
+        <div class="flex flex-col basis-2/3">
+            <h1 class="font-bold text-3xl">Hello! I am Ameen Muhammed Jumah.</h1>
+            <p class="font-semibold">I am an engineering student in MVJ College of Engineering.</p>
+            <div class="flex flex-row gap-3">
+                <button class="bg-cyan-400 btn px-2 py-2 rounded-md text-white">View Instagram</button>
+                <button class="bg-green-400 btn px-2 py-2 rounded-md text-white">View GitHub</button>
+            </div>
+        </div>
+
+        <div class="basis-1/3">
+            <img src="11.jfif" alt="Path not found" class="w-72 hover:scale-110 transition duration-300">
+        </div>
+    </main>
+</body>
+</html>
